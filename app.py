@@ -132,3 +132,4 @@ if st.button("Baixar e Processar"):
 
 st.markdown("---")
 st.caption("Dica: para vídeos longos, a divisão pode demorar um pouco (depende do seu processador).")
+
