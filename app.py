@@ -156,11 +156,9 @@ if st.button("Baixar apenas o áudio em mp3 (até 5 minutos)"):
             st.error("Não foi possível processar download/extrair áudio.")
 
 st.divider()
-
 ##########################################
 # FLUXO DE VÍDEO (original permanece)
 ##########################################
-
 part_option = st.selectbox(
     "Escolha o tamanho máximo das partes (em minutos):",
     [10, 25, 30],
@@ -223,7 +221,6 @@ if st.session_state.video_ready and st.session_state.video_file:
                 )
         st.session_state.divided = True
         st.session_state.show_audio_button = False
-
     else:
         st.info("Vídeo possui 20 minutos ou menos. Será convertido para .mp4 compatível.")
         output_file = convert_full_file(st.session_state.video_file)
@@ -257,6 +254,5 @@ if st.session_state.video_ready and st.session_state.video_file:
             st.session_state.video_ready = False
             st.session_state.video_file = ""
             st.info("Arquivo de vídeo removido, restando apenas o áudio extraído.")
-
 st.markdown("---")
 st.caption("Dica: para vídeos longos, a divisão pode demorar um pouco (depende do seu processador).")
