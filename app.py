@@ -4,9 +4,7 @@ import yt_dlp
 import subprocess
 import streamlit as st
 import shutil
-
 ssl._create_default_https_context = ssl._create_unverified_context
-
 def download_video(url, output_path='video_temp.mp4'):
     ydl_opts = {
         'format': 'bestvideo+bestaudio/best',
