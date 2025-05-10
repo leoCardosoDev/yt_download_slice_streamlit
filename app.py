@@ -109,9 +109,7 @@ def split_video(video_path, video_length, part_duration=25*60, output_folder='pa
 #####################################
 
 st.title("Baixar e Dividir Vídeo do YouTube (Compatível com Adobe Premiere)")
-
 youtube_url = st.text_input("Digite a URL do vídeo do YouTube:")
-
 # -------------------------------
 # FLUXO INDEPENDENTE DE ÁUDIO
 # -------------------------------
