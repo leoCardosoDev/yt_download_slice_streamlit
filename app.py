@@ -205,7 +205,6 @@ if st.session_state.video_ready and st.session_state.video_file:
         st.info(f"Dividindo vídeo em partes de {part_option} minutos, compatíveis com Premiere...")
         part_files = split_video(st.session_state.video_file, st.session_state.duration, part_duration=part_option*60)
         st.success(f"Vídeo dividido em {len(part_files)} parte(s).")
-
         for pf in part_files:
             st.write(os.path.basename(pf))
             with open(pf, "rb") as video_file:
