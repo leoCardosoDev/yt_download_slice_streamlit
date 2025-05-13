@@ -160,7 +160,6 @@ part_option = st.selectbox(
     [10, 25, 30],
     index=1
 )
-
 if "video_ready" not in st.session_state:
     st.session_state.video_ready = False
     st.session_state.video_file = ""
@@ -168,7 +167,6 @@ if "video_ready" not in st.session_state:
     st.session_state.audio_file = ""
     st.session_state.duration = 0
     st.session_state.divided = False
-
 if st.button("Baixar e Processar vídeo para Premiere"):
     # Limpa arquivos antigos do vídeo principal
     for nome_arq in ["video_temp.mp4", "video_temp_converted.mp4"]:
